@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon-->
+    <link rel="icon" type="webp" sizes="16x16" href="Media/favicon.webp" />
+
+  </head>
+
+  <body>
+    <header style="text-align: center">
+      <img src="Media/cesae-digital-logo.svg" alt="" /> <div><button onclick="alert('Apanhaste-me não faz nada')"> Não carregues</button></div>
+    </header>
+    <br />
+
+    <nav style="text-align: center">
+      <a href="exercicio.html"
+        >Ir para a pagina inicial</a
+      >
+      <a href="multimedia.html"> Multimedia importante</a>
+      <a href="form.html"> Formulario de Contacto</a><br />
+      <a href="https://www.instagram.com/cesae.digital/" target="_blank">
+        <img src="Media/insta.jpg" alt="" alt="insta" width="25"
+      /></a>
+      <a href="https://www.facebook.com/CesaeDigital" target="_blank">
+        <img src="Media/face.avif" alt="face" width="25"
+      /></a>
+      <a href="https://www.youtube.com/@cesaedigital" target="_blank">
+        <img
+          src="Media/youtube.jpg=n-w1920-h1080-fcrop64=1,00000000ffffffff-rw"
+          alt="youtube"
+          width="65"
+      /></a>
+      <a href="https://www.linkedin.com/school/cesae-digital/" target="_blank">
+        <img src="Media/linkdin.avif" alt="linkdin" width="25"
+      /></a>
+    </nav>
+
+    <form action="" method="get">
+      <hr />
+      <fieldset>
+        <legend style="text-align: center">
+          <h3>Formulário de Contacto CESAE</h3>
+        </legend>
+        <div>
+          <label for="Nome">Nome:</label>
+          <input
+            type="text"
+            name="form-nome"
+            placeholder="Insira o seu nome"
+            required
+          />
+        </div>
+        <div>
+          <label for="Email"> Email</label>
+          <input
+            type="email"
+            name="form-email"
+            id=""
+            placeholder="@gmail.com"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="Genero"> Genero</label> <br />
+          <input type="radio" name=" genero" /> Masculino<br />
+          <input type="radio" name=" genero" /> Feminino<br />
+          <input type="radio" name=" genero" />Outros
+        </div>
+        <br />
+        <div>
+          <label for="Data de nascimento">Data Atual</label>
+          <input type="date" value="2026-04-01"/>
+        </div>
+        <div>
+          <label for="Turma">
+            Turma
+            <select name="curso" id="">
+              <option value="Web Developer & Mobile">
+                Web Developer & Mobile
+              </option>
+              <option value="Super nerd"> Super Nerd</option>
+            </select>
+          </label>
+        </div>
+        <br />
+        <div>
+          <label for=""
+            >Mensagem
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+          </label>
+        </div>
+        <div>
+          <input type="reset" value="Limpar" />
+          <input type="submit" />
+        </div>
+      </fieldset>
+    </form>
+    <hr />
+    <footer>
+      <p>Desenvolvido por Armando</p>
+    </footer>
+  </body>
+</html>
