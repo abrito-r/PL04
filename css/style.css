@@ -1,12 +1,25 @@
 span {background-color: red; color: white}
+
 form{background-color: aqua;}
-footer{background-color: black; color:azure}
+
+footer{ text-align:center; black; background-color: gray;  padding: 5ppx; margin: 20px;}
+
 .renan{text-align: center;
         border-style: groove; 
         border-color:  rgb(100, 5, 21);
         background-color: antiquewhite;}
         header{background-color: rgb(74, 141, 141);}
+
 .jogo{margin: 20 px;
     background-color: chocolate;
 max-width: 100%;}
-nav>a{color: rgb(74, 141, 141);}
+
+nav>a{color: rgb(74, 141, 141); }
+
+header{text-align: center; ;}
+
+body{background-color: bisque; margin: 20 px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+p{text-align: justify;}
+header>a>img{text-align: center; width: 50%;}
+header>img{width: 50%;}

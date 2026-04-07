@@ -21,21 +21,30 @@
       width: 50px;
       height: 50px;
       background: red;
-      position: absolute;
+      position: relative;
       top: 100px;
       left: 100px;
-      cursor: pointer;
+      cursor: not-allowed;
     "></div>
-  </div>
+         
+    <div id="line" onmouseover="moveCliker()" style="
+     width: 50px;
+      height: 50px;
+      background-image: url(Media/renan.png) ;
+      position: absolute;
+      cursor: pointer;
+       position:absolute;
+       top: 80px;
+       left: 100px;"></div>
 
   <script>
     let score = 0;
-
     function moveSquare() {
       score++;
       document.getElementById("score").innerText = score;
 
       let square = document.getElementById("square");
+     
 
       let maxX = 250; // 300 - 50
       let maxY = 250;
@@ -45,6 +54,27 @@
 
       square.style.left = randomX + "px";
       square.style.top = randomY + "px";
+      if (score === 10) { alert("u win");
+      }  
+      
+    }
+  </script>
+  <script>
+    function moveCliker() {
+      score--;
+     document.getElementById("score").innerText = score;
+
+     let line = document.getElementById("line");
+
+      let maxX = 150; // 300 - 50
+      let maxY = 150;
+
+      let randomX = Math.random() * maxX;
+      let randomY = Math.random() * maxY;
+
+      line.style.left = randomX + "px";
+      line.style.top = randomY + "px";
+      if (score === -3) {alert("FAIL");}
     }
   </script>
 </body>
